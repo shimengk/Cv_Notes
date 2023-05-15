@@ -43,7 +43,7 @@ download=True表示当前根目录如果没有数据集时，自动下载
 
 运行后下载的文件目录结构如下：
 
-![目录结构](E:\pyprojects\Cv_Notes\chap3_FCNET\assets\cca3818c44a740e39be259d4119924f4.png)
+![image-20230423150421472](assets/image-20230423150421472.png)
 
 
 此时的数据集是二进制形式，需要使用加载器进行解析
@@ -99,8 +99,9 @@ tensor([[  0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0,   0, 0
 ## 定义网络
 自定义网络需要继承nn.Module
 全连接的结构如下
-![在这里插入图片描述](E:\pyprojects\Cv_Notes\chap3_FCNET\assets\adee5c2528a34a78addeebdfa36ecffc.png)
-![在这里插入图片描述](E:\pyprojects\Cv_Notes\chap3_FCNET\assets\88896770d6c34b1791f69de03e29d925.png)
+![adee5c2528a34a78addeebdfa36ecffc](assets/adee5c2528a34a78addeebdfa36ecffc.png)
+
+![88896770d6c34b1791f69de03e29d925](assets/88896770d6c34b1791f69de03e29d925.png)
 
 我们使用`nn.Linear(in_features: int, out_features: int, bias: bool = True)`定义全连接的隐藏层。Linear的内部核心是一个大小为`out_features X in_features`的权重矩阵。
 
